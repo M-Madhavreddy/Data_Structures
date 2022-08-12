@@ -87,17 +87,23 @@ int main()
    
     int choice;
     while(1){
-        cout<<"enter the element to be inserted \n";
-        cin>>num;
-        cout<<"Insertion >> 1.At Beginning \n2.At Given Position \n3.At End\n4.prnit \n5.Exit";
+        
+        cout<<"Insertion >> 1.At Beginning \n2.At Given Position \n3.At End\n4.prnit \n5.Exit\n";
+        cout<<"enter your choice >> ";
         cin>>choice;
         switch (choice)
         {
-            case 1 : InsertBeg(num);
+            case 1 : cout<<"enter the element to be inserted \n";
+                     cin>>num;
+                     InsertBeg(num);
                      break;
-            case 2 : InsertPos(num);
+            case 2 : cout<<"enter the element to be inserted \n";
+                     cin>>num;
+                     InsertPos(num);
                      break;
-            case 3 : InsertEnd(num);
+            case 3 : cout<<"enter the element to be inserted \n";
+                     cin>>num;
+                     InsertEnd(num);
                      break;
             case 4 : Print();
                      break;
